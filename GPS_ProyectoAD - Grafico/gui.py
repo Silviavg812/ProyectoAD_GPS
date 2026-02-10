@@ -6,7 +6,6 @@ import os
 import sqlite3
 from datetime import datetime
 
-# Añadir el directorio raíz al path para importar desde src
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from src.sqlite_dao import SqliteDAO
@@ -416,7 +415,7 @@ class GPSSimulatorGUI:
         
         tk.Label(
             input_grid,
-            text="(nodo 0-39)",
+            text="(nodo 0-40)",
             font=('Arial', 8),
             bg=self.bg_color,
             fg='#999'
@@ -436,7 +435,7 @@ class GPSSimulatorGUI:
         
         tk.Label(
             input_grid,
-            text="(nodo 0-39)",
+            text="(nodo 0-40)",
             font=('Arial', 8),
             bg=self.bg_color,
             fg='#999'

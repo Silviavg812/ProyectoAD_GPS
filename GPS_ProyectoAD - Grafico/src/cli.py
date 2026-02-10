@@ -14,8 +14,6 @@ def parse_nodes_list(text: str) -> List[int]:
         return []
     return [int(x.strip()) for x in text.split(",") if x.strip()]
 
-
-
 def main() -> None:
     print("=" * 50)
     print("     SIMULADOR GPS - ALGORITMO DE DIJKSTRA")
@@ -105,8 +103,6 @@ def main() -> None:
     
     print("-" * 50)
     print("🎯 Proceso completado.")
-
-
 
 if __name__ == "__main__":
     main()
