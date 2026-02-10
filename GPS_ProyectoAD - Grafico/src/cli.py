@@ -1,12 +1,10 @@
 from __future__ import annotations
 from typing import List, Optional
 
-
 from src.graph_from_dao import DAOGraphAdapter
 from src.routing import route_with_stops, second_shortest_path_yen, choose_alternative_if_close
 from src.sqlite_dao import SqliteDAO
 from src.dijkstra import PathResult
-
 
 
 def parse_nodes_list(text: str) -> List[int]:
@@ -48,7 +46,7 @@ def main() -> None:
     print()
     print("-" * 50)
     
-    # ⭐ VERIFICAR HISTÓRICO PRIMERO (solo si NO hay intermedios)
+    # VERIFICAR HISTÓRICO PRIMERO (solo si NO hay intermedios)
     if not stops:
         print("🔍 Buscando en histórico de rutas...")
         historico = dao.buscar_en_historico(origin, destination)

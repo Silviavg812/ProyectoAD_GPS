@@ -1,11 +1,3 @@
-"""
-GUI para el Simulador GPS
-Interfaz gráfica con tkinter para calcular rutas óptimas usando Dijkstra
-Incluye visualización gráfica del grafo con matplotlib
-Autor: Tu nombre
-Fecha: Febrero 2026
-"""
-
 import tkinter as tk
 from tkinter import ttk, messagebox, scrolledtext
 from typing import Optional
@@ -39,7 +31,6 @@ class HistoricoWindow:
         self.cargar_historico()
     
     def create_widgets(self):
-        """Crea los widgets de la ventana de histórico"""
         # Frame principal
         main_frame = tk.Frame(self.window, bg='#f5f5f5')
         main_frame.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)

@@ -1,9 +1,3 @@
-"""
-Visualizador del Grafo GPS
-Genera una visualización gráfica del laberinto/grafo
-COLUMNA CORRECTA: cost
-"""
-
 import matplotlib
 matplotlib.use('TkAgg')
 
@@ -24,7 +18,6 @@ def visualizar_grafo(db_path="data/gps.db", highlight_path=None):
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
         
-        # ✅ CORREGIDO: Usar 'cost' en lugar de 'coste'
         cursor.execute("SELECT origin, destination, cost FROM aristas")
         edges = cursor.fetchall()
         conn.close()
