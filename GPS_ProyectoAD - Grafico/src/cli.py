@@ -77,7 +77,6 @@ def main() -> None:
     # Guardar en histórico (solo si NO hay intermedios)
     if not stops:
         dao.guardar_ruta(origin, destination, best.cost, best.path, False)
-        print("💾 Ruta guardada en el histórico.\n")
     
     # Calcular ruta alternativa (solo cuando NO hay intermedios)
     if not stops:
